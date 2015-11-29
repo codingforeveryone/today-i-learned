@@ -1,0 +1,1 @@
+This folder contains examples of ways to create random test cases in Codewars.
