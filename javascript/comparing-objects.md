@@ -1,4 +1,5 @@
-There is no direct way to compare objects in JavaScript. For example, if you have `{} === {}`, it returns `false`. This is also the case for arrays. However, you can get around this by comparing the properties.
+There is no direct way to compare objects in JavaScript. For example, if you have `{} === {}`, it returns `false`.
+This is also the case for arrays. However, you can get around this by comparing the properties.
 
 ```javascript
 var compareObjects = function(a, b) {
@@ -27,3 +28,5 @@ var compareObjects = function(a, b) {
   return true;
 };
 ```
+
+[Both of the above methods were adapted from this blog.](https://stamat.wordpress.com/2013/06/22/javascript-object-comparison/)
