@@ -23,5 +23,8 @@ Guidelines on how to write a great TIL:
 If you find your TIL straying from these guidelines, consider
 
 - narrowing the scope of your TIL
-- splitting it up into multiple TILs 
+- splitting it up into multiple TILs
 - writing a blog post on the subject
+
+When adding your TIL, see [here for a concise guide on naming conventions for
+files/directories on GitHub](https://github.com/sofer/stuff/blob/master/naming.md).
