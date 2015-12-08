@@ -1,0 +1,3 @@
+Got a new notification? Why waste time moving your cursor to that little blue dot when you can just type g + n to open your notifications! There are [several shortcuts on GitHub](https://help.github.com/articles/using-keyboard-shortcuts/) to make navigating the site easier and quicker. 
+
+Rather than referencing this page every single time you want to use a shortcut, you can type '?' on any GitHub page and it will open a quick guide for shortcuts. Sure, it might be a bit slower at first as you learn the different keyboard shortcuts, but once you get used to them you'll be navigating GitHub faster than ever!
