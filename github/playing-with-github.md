@@ -8,3 +8,5 @@ to mastering markdown, issues, and wikis.
 - [Explore GitHub](https://github.com/explore) - this can also be accessed by clicking
 on your profile photo and choosing 'Explore' from the drop down list. Great for
 just seeing what other people are working on, and how they are using GitHub.
+- [Try GitHub](https://try.github.io) - Discover the basics of Git in 15 minutes, created by [Code School](https://www.codeschool.com).
+- [Git-it Workshop](https://github.com/jlord/git-it) - A little app in your terminal with challenges to learn Git and GitHub, from [Node School](http://nodeschool.io/#workshoppers).
