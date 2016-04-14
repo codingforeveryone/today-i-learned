@@ -16,7 +16,13 @@ console.log(newString);
 // 'abcabcabc'
 ```
 
-Alternatively, in ES6 there is now a `String.prototype.repeat()` method available:
+Alternatively, you could also use the [fill() method](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) to achieve the same result:
+
+```javascript
+newString = Array(4).fill('abc').join('');
+```
+
+Finally, in ES6 there is now a [repeat() method](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) available:
 
 ```javascript
 str.repeat(count);
