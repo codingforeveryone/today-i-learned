@@ -14,7 +14,7 @@ A quicker way to do this is:
 b = [a, a = b][0];
 ```
 
-Or even, in ECMAScript 6:
+Finally, in ECMAScript 6 you can use [destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment):
 ``` javascript
 [a, b] = [b, a];
 ```
