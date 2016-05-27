@@ -1,6 +1,6 @@
 # Loaders 
 
-Loaders allow files to be preprocessed as and when theyre required to be loaded .
+Loaders allow files to be preprocessed as and when they're required to be loaded .
 
 They provide a powerful way to handle front end build steps.
 
