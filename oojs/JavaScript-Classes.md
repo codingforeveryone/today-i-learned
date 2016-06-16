@@ -1,6 +1,6 @@
 #JavaScript Functional Classes
 
-If you want to create multiple objects with similar methods and properties in JavaScript, the best options are functional classes, or constructor function. There are four styles of functional classes.
+If you want to create multiple objects with similar methods and properties in JavaScript, the best options are functional classes, or the constructor function. There are four styles of functional classes.
 
  * Functional
 
@@ -14,7 +14,7 @@ Each of these four is a different approach to object construction; they all acco
 
 Take for example, a street, which has many houses. Every house on the street requires a colour for the house, a front door with methods to open and close the door. A very simple example of where houses may be thought of as objects. 
 
-We can implement functional classes here, as every instance created by the function will have the attributes of house colour and open, close door.  
+We can implement functional classes here, as every instance created by the function will have the attributes of house colour and the methods to open and close the door.  
 
 From here we can potentially create hundreds, thousands or even more new house objects, which are similar.  So each functional class performs the same basic steps to generate the new houses.
 
@@ -25,7 +25,7 @@ From here we can potentially create hundreds, thousands or even more new house o
 
 Each of the four styles has its pros and cons.
 
-Firstly **functional style** is **fast, very simple and clear in object creation**.  However all methods will be duplicated for every single object created, so a new function stored in memory every time the object is generated.
+Firstly **functional style** is **fast, very simple and clear in object creation**.  However all methods will be duplicated for every single object created, so a new function is stored in memory every time the object is generated.
 
 ````
 var house = function(colour){
@@ -49,7 +49,7 @@ var house = House('red'); //instantiation pattern
 	
 ````
 
-Secondly **functional-shared**, which is better for memory management as it **utilises a single repository for the methods**, every time an object is created pointers are generated, so every new object will point back to the houseMethods object, where the stored functions one single time in memory.  
+Secondly **functional-shared**, which is better for memory management as it **utilises a single repository for the methods**. Every time an object is created, pointers are generated, so every new object will point back to the houseMethods object, where the functions are stored one single time in memory.  
 
 ````
 var house = function(colour){
@@ -80,7 +80,7 @@ var house = House('red'); //instantiation pattern
 ````
 This is not as efficient as delegating through fallback.
 
-Fallbacks are a back-up plan for objects, they are the cornerstone of **prototypal** style.  If a method or property is called on an object, where it does not exist for that object, JavaScript will check if it's defined on its fallback object. (See the README on [Inheritance and JavaScript](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/inheritance-and-javascript.md)).  Every function has a property called prototype where the fallback methods are stored.  So in the **prototypal** House function, **the House function's property (House.prototype) is explicitly delegated as the fallback location for EVERY house object created by House**.  So with every method in House.prototype is available to every object created by House.  The advantage being that, methods are not duplicated in memory.  However it utilises more code than the others.
+Fallbacks are a back-up plan for objects, they are the cornerstone of **prototypal** style.  If a method or property is called on an object, where it does not exist for that object, JavaScript will check if it's defined on its fallback object. (See the README on [Inheritance and JavaScript](https://github.com/codingforeveryone/READMEs/blob/master/JavaScript/inheritance-and-javascript.md)).  Every function has a property called prototype where the fallback methods are stored.  So in the **prototypal** House function, **the House function's property (House.prototype) is explicitly delegated as the fallback location for EVERY house object created by House**.  So every method in House.prototype is available to every object created by House.  The advantage is that methods are not duplicated in memory. However, it utilises more code than the others.
 
 ````
 var house = function(colour){
@@ -107,8 +107,7 @@ var house = House('red'); //instantiation pattern
 
 ````
 
-Lastly we come to **pseudoclassical**.  Instead of assigning the Object.create(House.prototype) to a new variable, it is assigned to `this` for the purpose of simple property assignment and method creation.  **The interpreter will do this automatically 'under the bonnet', and returning the object, so long as the keyword `new` initialised at instantiation**  `var house = new House('red')`.  The disadvantage is that 
-object creation is not that clear.
+Lastly we come to **pseudoclassical**.  Instead of assigning the Object.create(House.prototype) to a new variable, it is assigned to `this` for the purpose of simple property assignment and method creation.  **The interpreter will do this automatically 'under the bonnet', and return the object, so long as the keyword `new` initialised at instantiation**  `var house = new House('red')`.  The disadvantage is that object creation is not that clear.
 
 ````
 var house = function(colour){
@@ -141,6 +140,6 @@ Instantiation happens when a functional class is utilized to create a new object
  
 `var house = House('red')` 
      
-Note that Pseudoclassical is the only style, which makes use of the `new` keyword, the other three classes are used like a function call.
+Note that Pseudoclassical is the only style that makes use of the `new` keyword, the other three classes are used like a function call.
 
-None of the above are better or worse to use, they are just styles, and it is up to you as the programmer, to decide which your program would benefit the most from.
+None of the above are better or worse to use, they are just styles, and it is up to you as the programmer to decide which your program would benefit the most from.
