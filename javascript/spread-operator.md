@@ -1,8 +1,8 @@
-### The spread operator
+### The Spread Operator
 
-Today I learned about a powerful feature of ES6 (ES6 being the latest standard of JavaScript implementation in the browsers), the so-called spread operator that looks like this `...`.
+A powerful feature of ES6, the latest standard of JavaScript implementation, is the spread operator, represented by three dots `...`.
 
-This operator is used as a prefix for a parameter name or an element in an array. It allows for an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literal notation) are expected.
+This operator is commonly used as a prefix for parameter names or elements in an array. In this way, expressions can be expanded in places where multiple arguments (for function calls) or multiple elements (for array literal notation) are expected.
 
 * *Example 1 - Function calls*   
 The spread syntax enables you to pull a real array out of the function arguments by adding a parameter prefixed by `...`. This is quite handy when an array is passed as an argument (or multiple arguments) to a function, as below:
@@ -25,5 +25,10 @@ console.log(toBuy); // [ "rice", "milk", "bread", "eggs", "beers", "snacks", "so
 
 The spread operator looks exactly the same as the rest operator, which is used for destructuring arrays and objects. 
 
-For more information on both the spread and rest operators, check out this [MDN reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator).
+#### References
+For more information on both the spread and rest operators, check out the following references:
+- [MDN reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)  
+- [Youtube JavaScript ES6 Tutorial #5](https://www.youtube.com/watch?v=1INe_jCWq1Q) 
+- [How three dots changed JavaScript](https://rainsoft.io/how-three-dots-changed-javascript/)
+
 
