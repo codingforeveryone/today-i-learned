@@ -1,16 +1,16 @@
 # The keyword _this_
 
-In most classical object oriented languages, there is a way to refer to the current object. With JavaScript the keyword `this` is used.
+In most classical object oriented languages, there is a way to refer to the current object. With JavaScript the keyword _this_ is used.
 
-Now `this` maybe the most misunderstood aspect of the language. One way to understand it better is to think of it as the parameter `this`, as it behaves almost exactly as a parameter with two exceptions.
+Now _this_ maybe the most misunderstood aspect of the language. One way to understand it better is to think of it as the parameter _this_, as it behaves almost exactly as a parameter with two exceptions.
 
 Firstly you, the developer, cannot pick its name - it will always be called `this`.
 
 Secondly, values are bound differently to `this` compared with how values are bound to other parameters.
 
-When you invoke a method of an object (i.e. using dot notation), `this` will refer to the object on the left of the function invocation:
+When you have a function invocation to the right of a full stop (`.`), this means that the function is a property of the object to the left of the full stop. Object properties that are functions are known as _methods_. When you invoke a method of an object, `this` will refer to the object on the left of the function invocation:
   
-    v.method(w); // v is what `this` references
+    v.method(w); // the object `v` is what `this` references
 
 **NOTE** - when there is no period, `this` references the global object.
 
