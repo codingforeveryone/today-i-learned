@@ -4,7 +4,7 @@ In most classical object oriented languages, there is a way to refer to the curr
 
 Now _this_ maybe the most misunderstood aspect of the language. One way to understand it better is to think of it as the parameter _this_, as it behaves almost exactly as a parameter with two exceptions.
 
-Firstly you, the developer, cannot pick its name - it will always be called `this`.
+Firstly you, the developer, cannot pick its name - it will always be the parameter `this`.
 
 Secondly, values are bound differently to `this` compared with how values are bound to other parameters.
 
