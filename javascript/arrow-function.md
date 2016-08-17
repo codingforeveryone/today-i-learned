@@ -12,12 +12,16 @@ var myFunction = function(arg) {
 // it is equivalent to
 var myFunction = arg => (expression);
 ```
+Note that the argument in the example above is not placed inside parenthesis. When the arrow function receives just one argument, the use of parenthesis is optional. However, as you will see in the following examples, in case of more than one argument they must be placed inside parenthesis.
 
 In terms of how a value is returned from an arrow function there are two types of structures: one expression inside the function, or more than one.
 
 ```JavaScript
-// One expression. The value resulting from the expression is returned. The braces must be omitted
+// One expression. You have two possibilities.
+  // 1. Without braces. The value resulting from the expression is returned. The braces must be omitted
 var sum = (a, b) => a + b;
+  // 2. With braces. The value resulting from the expression must be explicitly returned
+var sum = (a, b) => {return a + b};
 
 // More than one expression. The braces must be written and the returned value must be explicitly returned
 var function = (a, b, c) => {
