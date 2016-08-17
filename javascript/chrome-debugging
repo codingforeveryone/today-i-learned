@@ -1,6 +1,6 @@
 # How to use chrome debugger 
 
-Chrome developer tools are a wonderful way to see what is exactly happening with the code at every iteration. 
+Chrome developer tools are a wonderful way to see what is exactly happening with your code at every iteration. 
 
 ### Instructions
 Make a simple html file with Notepad by copying this inside it and saving as .html
@@ -21,12 +21,19 @@ Your code goes here!
 </body>
 </html>
 ``` 
-![Chrome debugger layout](https://drive.google.com/open?id=0B3Ws6ZqKKpLOT19qU01TTW1SeVk)	
+
 Open your .html file in chrome and 	from control tools --> more tools choose Developer tools
+or use one of those keyboard shortcuts *Ctr + Sh + I 
+                                       *Ctr + Cmd + I 
+                                       *F12
+
+![Chrome debugger layout](https://drive.google.com/open?id=0B3Ws6ZqKKpLOT19qU01TTW1SeVk)	
 
 Click Sources from the top menu, select your file name and refresh page just in case.  
 At the upper right side of the screen there is a dot with an arrow over it, when you start clicking it, the debugger goes through the code line by line and shows every single iteration next to the code and on the log window on the left. 
 
 To start debugging from the top refresh the page.
 
-Keep in mind to call the function at the end of the code with a test parameter otherwise the debugger won't run.
+Keep in mind to call the function at the end of the code with a test parameter otherwise the debugger won't have a function or loop to watch running.
+
+Great collection of information about debugging at [http://codingforeveryone.foundersandcoders.org/programmer-skills/Debugging-Javascript.html]
