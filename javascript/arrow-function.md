@@ -43,4 +43,5 @@ arr.sort((a, b) => a - b); // [1, 3, 4, 5, 6, 9, 15, 23]
 ```
 
 ## Resources
-  1. [Arrow functions on MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+  * [Arrow functions on MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+  * [Arrow functions on the READMEs](http://codingforeveryone.foundersandcoders.org/JavaScript/ECMAScript%206.html#arrow-functions)
