@@ -10,7 +10,7 @@ console.log(array1);   // ['a','b','c','d']
 console.log(array2);   // ['a','b','c','d']
 ```
 
-Instead, a neat way of duplicating an array is using `concat()`:
+Instead, a neat way of duplicating an array is using the `concat()` method with no parameter:
 
 ``` javascript
 var array1 = ['a','b','c'];
@@ -19,4 +19,10 @@ array2.push('d');
 
 console.log(array1);   // ['a','b','c']
 console.log(array2);   // ['a','b','c','d']
+```
+
+Another way is to use the `slice()` method with no begin or end parameter, thus effectively slicing the entire array:
+
+``` javascript
+var array2 = array1.slice();
 ```
