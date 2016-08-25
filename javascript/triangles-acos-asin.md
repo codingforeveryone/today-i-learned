@@ -1,4 +1,4 @@
-Defining the angles and length of sides of a triangle.
+##Defining the angles and length of sides of a triangle.
 
 To find out the length of an unknown side when dealing with a right angled triangle, Pythagoras Theroem or SOH CAH TOA would be used. Derived from the same theroem, but used in instances where a right angle is not present, the sine or cosine rule are applied to find missing sides. To find an angle with the length of two sides known the SOH CAH TOA is utilised if there is a right angle; otherwise the cosine or sine rules, dependent on the angles and lengths given, are used to calculate missing angles. 
 
